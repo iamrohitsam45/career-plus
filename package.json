@@ -4,6 +4,7 @@
   "private": true,
   "description": "Enterprise AI-Powered Job Portal & Career Intelligence Platform",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "dev": "pnpm --parallel --filter \"@careerpulse/*\" run dev",
     "dev:web": "pnpm --filter @careerpulse/web run dev",
     "dev:api": "pnpm --filter @careerpulse/api run dev",
