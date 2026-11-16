@@ -1,0 +1,22 @@
+{
+  "name": "career-pulse-ai-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Enterprise AI-Powered Job Portal & Career Intelligence Platform",
+  "scripts": {
+    "dev": "pnpm --parallel --filter \"@careerpulse/*\" run dev",
+    "dev:web": "pnpm --filter @careerpulse/web run dev",
+    "dev:api": "pnpm --filter @careerpulse/api run dev",
+    "build": "pnpm --recursive run build",
+    "build:shared": "pnpm --filter @careerpulse/shared run build",
+    "build:api": "pnpm --filter @careerpulse/api run build",
+    "build:web": "pnpm --filter @careerpulse/web run build",
+    "test": "pnpm --recursive run test",
+    "seed": "pnpm --filter @careerpulse/api run seed",
+    "lint": "pnpm --recursive run lint",
+    "clean": "rm -rf node_modules apps/*/node_modules packages/*/node_modules apps/*/.next apps/*/dist packages/*/dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
